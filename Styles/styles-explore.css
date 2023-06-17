@@ -191,7 +191,7 @@ html {
 .separator-dot {
     color: var(--color-mainblue);
     padding-right: 1rem;
-    padding-left: 1rem;;
+    padding-left: 1rem;
 }
 
 
@@ -286,4 +286,62 @@ hr {
     margin: 0 auto;
     border-radius: 2px;
 
+}
+
+.explore-text h2 {
+    font-size: calc(32 / 16 * 1rem);
+    line-height: calc(37.2 / 16 * 1rem);
+    font-weight: 500;
+    margin-top: calc(96 / 16 * 1rem);
+    text-align: center;
+}
+
+.explore-text p {
+    font-size: 1rem;
+    line-height: calc(18.75 / 16 * 1rem);
+    font-weight: 500;
+    margin-top: calc(24 / 16 * 1rem);
+    text-align: center;
+    margin-left: 353px;
+    margin-right: 353px;
+}
+
+.explore-cards-flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 54px 222px 82px 222px;
+}
+
+.explore-cards {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    background: #ffffff;
+    width: calc(150 / 16 * 1rem);
+    height: calc(170 / 16 * 1rem);
+}
+
+.explore-cards p {
+    text-align: center;
+    padding-top: 7.5rem;
+    position: relative;
+    font-weight: 500;
+}
+
+.explore-cards img {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+.bitcoin {
+    transform: translateX(25%)
+}
+
+.retention {
+    transform: translateX(-5%)
 }

@@ -327,6 +327,7 @@ hr {
     padding-top: 7.5rem;
     position: relative;
     font-weight: 500;
+    color: #444444;
 }
 
 .explore-cards img {
@@ -344,4 +345,80 @@ hr {
 
 .retention {
     transform: translateX(-5%)
+}
+
+.lg-payment-card {
+    width: 880px;
+    height: 420px;
+    border: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    transform: translateX(18%)
+}
+
+.lg-payment-card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.lg-payment-card-grid-left {
+    grid-column: 1;
+    background: #ffffff;
+}
+
+.payment-card-right {
+    grid-column: 2 / 4;
+    background: var(--color-mainblue);
+    border-radius: 0 16px 16px 0;
+    padding-left: 2rem;
+}
+
+div.payment-card-right h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: calc(28.13 / 16 * 1rem);
+    color:#ffffff;
+    text-align: left;
+    margin-top: calc(48 / 16 *1rem);
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+}
+
+div.payment-card-right p {
+    font-size: 1rem;
+    font-weight: 500; 
+    color: #ffffff;
+    line-height: calc(18.75 / 16 * 1rem);
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+div.payment-card-right li {
+    color: #ffffff;
+    font-size: calc(12 / 16 * 1rem);
+    font-weight: 500;
+    line-height: 14px;
+    margin-left: 1rem;
+    margin-right: calc(119 / 16 * 1rem);
+    margin-bottom: 1rem;
+}
+
+.learn-more-button-white {
+    background: #ffffff;
+    color: var(--color-mainblue);
+    font-size: calc(18 / 16 * 1rem);
+    font-weight: 700;
+    padding: 16px 77px 16px 48px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 1rem;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.white-button-img {
+    position: absolute;
+    bottom: 3.35rem;
+    left: 34rem;
 }

@@ -13,7 +13,7 @@
 
 html {
     max-width: 1200px;
-    width: 100%;
+width: 100%;
     background: #ffffff;
 }
 
@@ -24,6 +24,7 @@ html {
     box-shadow: 2px 0 6px rgba(0,0,0,0.5);
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 .navbar-flex {
@@ -181,7 +182,7 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: .5rem;
+    font-size: 12px;
     line-height: calc(16.41 / 16 * 1rem);
     font-weight: 200;
     padding-top: calc(20 / 16 * 1rem);
@@ -351,9 +352,10 @@ hr {
     width: 880px;
     height: 420px;
     border: none;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.25);
     border-radius: 16px;
-    transform: translateX(18%)
+    transform: translateX(18%);
+    margin-bottom: 96px;
 }
 
 .lg-payment-card-grid {
@@ -372,6 +374,7 @@ hr {
     background: var(--color-mainblue);
     border-radius: 0 16px 16px 0;
     padding-left: 2rem;
+    box-shadow: 0 0 8px (rgba(0, 0, 0, 0.25));
 }
 
 div.payment-card-right h3 {
@@ -421,4 +424,102 @@ div.payment-card-right li {
     position: absolute;
     bottom: 3.35rem;
     left: 34rem;
+}
+
+.solutions-header {
+    font-size: calc(28 / 16 * 1rem);
+    font-weight: 550;
+    line-height: 2rem;
+    color: #000000;
+    text-align: center;
+    letter-spacing: .09rem;
+    transform: translateX(-6%);
+}
+
+.solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    
+}
+
+.solutions-grid-card-flex {
+    /* border: 2px solid red; */
+    max-width: 100%;
+    text-align: center;
+    margin-top: 58px;
+}
+
+.solutions-grid-card-flex div {
+    border: none;
+    background: var(--color-mainblue);
+    width: 128px;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    transform: translateX(175%);
+    margin-bottom: 23px;
+}
+
+.email-img {
+    position: absolute;
+    top: 2.6rem;
+    left: 2.2rem;
+    width: 60px; 
+}
+
+.barchart-img {
+    position: absolute;
+    top: 1.9rem;
+    left: 2.2rem;
+    width: 60px; 
+}
+
+.calendar-img {
+    position: absolute;
+    top: 1.8rem;
+    left: 2.2rem;
+    width: 60px; 
+}
+
+.solutions-grid-card-titles {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 32.81px;
+}
+
+.solutions-grid-card-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    margin: 13px 175px 0 175px;
+    text-align: center;
+}
+
+.solutions-grid-card-flex-left {
+    transform: translateX(12.5%);
+}
+
+.solutions-grid-card-flex-right {
+    transform: translateX(-35%);
+}
+
+.learn-more-button-white-bordered {
+    background: #ffffff;
+    color: var(--color-mainblue);
+    font-size: calc(18 / 16 * 1rem);
+    font-weight: 700;
+    padding: 16px 77px 16px 48px;
+    border-radius: 8px;
+    border: 2px solid var(--color-mainblue);
+    margin-top: 1rem;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.right-chevron-learn-more {
+    position:absolute;
+    bottom: 3.1rem;
+    right: 13.5rem;
 }

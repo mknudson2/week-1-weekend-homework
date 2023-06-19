@@ -244,18 +244,21 @@ div.main-grid-right-secondary-grid div {
     border-radius: 60px 0 0 0;
     background: var(--color-mainblue);
     color: #ffffff;
+    position: relative;
 }
 
 .secondary-grid-card-position2 {
     border-radius: 0 60px 0 60px;
     background: #ffffff;
     color: #000000;
+    position: relative;
 }
 
 .secondary-grid-card-position3 {
     border-radius: 0 60px 0 0;
     background: var(--color-mainblue);
     color: #ffffff;
+    position: relative;
 
 }
 
@@ -263,12 +266,14 @@ div.main-grid-right-secondary-grid div {
     border-radius: 60px 0 60px 0;
     background: var(--color-mainblue);
     color: #ffffff;
+    position: relative;
 }
 
 .secondary-grid-card-position5 {
     border-radius: 50%;
-    background: ;
-    color: ;
+    background: #ffffff;
+    color: #000000;
+    position: relative;
 
 }
 
@@ -276,24 +281,58 @@ div.main-grid-right-secondary-grid div {
     border-radius: 60px 0 60px 0;
     background: var(--color-mainblue);
     color: #ffffff;
+    position: relative;
 }
 
 .secondary-grid-card-position7 {
     border-radius: 0 0 0 60px;
     background: var(--color-mainblue);
     color: #ffffff;
+    position: relative;
 }
 
 .secondary-grid-card-position8 {
     border-radius: 0 60px 0 60px;
     background: #ffffff;
     color: #000000;
+    position: relative;
 }
 
 .secondary-grid-card-position9 {
     border-radius: 0 0 60px 0;
     background: var(--color-mainblue);
     color: #ffffff;
+    position: relative;
+}
+
+.secondary-grid-icons {
+    position: absolute;
+    top: 2.5rem;
+    right: 3.2rem;
+}
+
+.secondary-grid-icons1 {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.9rem;
+}
+
+.secondary-grid-icons5 {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.9rem;
+}
+
+.secondary-grid-icons6 {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.9rem;
+}
+
+.secondary-grid-icons8 {
+    position: absolute;
+    top: 2.5rem;
+    right: 3rem;
 }
 
 hr {

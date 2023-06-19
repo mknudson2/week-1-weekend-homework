@@ -480,6 +480,9 @@ div.payment-card-right li {
     left: 34rem;
 }
 
+
+/* SOLUTIONS */
+
 .solutions-header {
     font-size: calc(28 / 16 * 1rem);
     font-weight: 550;
@@ -508,19 +511,17 @@ div.payment-card-right li {
 .solutions-flexrow {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .solutions-grid-card-flex {
     /* border: 2px solid red; */
-    max-width: max-contentt;
+    /* max-width: max-content; */
+    width: 250px;
     text-align: center;
     margin-top: 58px;
-}
-
-.left {
-    gap:
+    margin-left: 3.6rem;
 }
 
 .solutions-grid-card-flex div {
@@ -530,7 +531,7 @@ div.payment-card-right li {
     border-radius: 50%;
     aspect-ratio: 1 / 1;
     position: relative;
-    transform: translateX(175%);
+    transform: translateX(50%);
     margin-bottom: 23px;
 }
 
@@ -565,7 +566,7 @@ div.payment-card-right li {
     font-size: 14px;
     font-weight: 400;
     line-height: 16.41px;
-    margin: 13px 175px 0 175px;
+    margin-top: 13px;
     text-align: center;
 }
 /* 
@@ -587,13 +588,17 @@ div.payment-card-right li {
     border: 2px solid var(--color-mainblue);
     margin-top: 1rem;
     margin-bottom: 30px;
+    /* position: relative; */
+}
+
+.button-relative {
     position: relative;
 }
 
 .right-chevron-learn-more {
     position:absolute;
-    bottom: 3.1rem;
-    right: 13.5rem;
+    bottom: 3.05rem;
+    right: 3.2rem;
 }
 
 

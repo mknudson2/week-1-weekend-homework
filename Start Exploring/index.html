@@ -40,7 +40,7 @@
         <div class="main-grid-left">
             <h1>Focus on <br>Your Business</h1>
             <h3>Let us handle everything else</h3>
-            <p>Subscription billing, powered with revenue retention tools and a seamless customer experience - without the technical hurdles</p>
+            <p class="main-grid-left-first-p">Subscription billing, powered with revenue retention tools and a seamless customer experience - without the technical hurdles</p>
             <div class="main-grid-left-buttons">
 
                 <a href="../Sign-Up/index.html"><button class="main-grid-left-signup-btn">Sign up free</button>
@@ -52,14 +52,14 @@
                 </a> <!--make an inline-block element so it will sit on the previous line next to the other button-->
 
             </div>
-            <p>Already using <strong>DoubleTap</strong>? <a href="../Sign-In/index.html" class="main-grid-left-bottom-singin-link"><strong>Sign in</strong></a></p>
-            <div > <!--make inline block so elements will sit on the same line-->
-                <p class="main-bottom-text">
-                    <span>Free 14 day trial</span><span class="separator-dot">&#9679</span>
-                    <span>Manage customers in minutes</span></span><span class="separator-dot">&#9679</span>
-                    <span>Cancel at anytime</span>
-                </p>
-                <p></p>
+            <p class="main-grid-left-p2">Already using <strong>DoubleTap</strong>? <a href="../Sign-In/index.html" class="main-grid-left-bottom-singin-link"><strong>Sign in</strong></a></p>
+
+            <div class="experiment-bottom-text">
+                <p>Free 14 day trial</p>
+                <p id="separator-dot">&#9679</p>
+                <p>Manage customers in minutes</p>
+                <p id="separator-dot">&#9679</p>
+                <p>Cancel at anytime</p>
             </div>
         </div>
 
@@ -176,44 +176,46 @@
 
     <section class="solutions-grid">
 
-        <div class="solutions-grid-card-flex solutions-grid-card-flex-left"> 
-            <div>
-                <img src="../Images/laptop.svg" alt="Email Dashboard" class="email-img">
+        <div class="solutions-flexrow">
+            <div class="solutions-grid-card-flex left">
+                <div>
+                    <img src="../Images/laptop.svg" alt="Email Dashboard" class="email-img">
+                </div>
+                <h2 class="solutions-grid-card-titles">Email Dashboards</h2>
+                <p class="solutions-grid-card-text">Automate client responses and keep track of any communication your team has with a client</p>
+                <button class="learn-more-button-white-bordered">Learn More</button>
+                <!-- <img src="../Images/arrows-right.svg" class="right-chevron-learn-more"> -->
             </div>
-            <h2 class="solutions-grid-card-titles">Email Dashboards</h2>
-            <p class="solutions-grid-card-text">Automate client responses and keep track of any communication your team has with a client</p>
-            <button class="learn-more-button-white-bordered">Learn More</button>
-            <img src="../Images/arrows-right.svg" class="right-chevron-learn-more">
+            <div class="solutions-grid-card-flex">
+                <div>
+                    <img src="../Images/checkbox.svg" alt="" class="email-img">
+                </div>
+                <h2 class="solutions-grid-card-titles">Task Management</h2>
+                <p class="solutions-grid-card-text">Automate client responses and keep track of any communication your team has with a client</p>
+                <button class="learn-more-button-white-bordered">Learn More</button>
+                <!-- <img src="../Images/arrows-right.svg" class="right-chevron-learn-more"> -->
+            </div>
         </div>
 
-        <div class="solutions-grid-card-flex solutions-grid-card-flex-right">
-            <div>
-                <img src="../Images/checkbox.svg" alt="" class="email-img">
+        <div class="solutions-flexrow">
+            <div class="solutions-grid-card-flex">
+                <div>
+                    <img src="../Images/barchart-alt.svg" alt="" class="barchart-img">
+                </div>
+                <h2 class="solutions-grid-card-titles">User Analytics</h2>
+                <p class="solutions-grid-card-text">Automate client responses and keep track of any communication your team has with a client</p>
+                <button class="learn-more-button-white-bordered">Learn More </button>
+                <!-- <img src="../Images/arrows-right.svg" class="right-chevron-learn-more"> -->
             </div>
-            <h2 class="solutions-grid-card-titles">Task Management</h2>
-            <p class="solutions-grid-card-text">Automate client responses and keep track of any communication your team has with a client</p>
-            <button class="learn-more-button-white-bordered">Learn More</button>
-            <img src="../Images/arrows-right.svg" class="right-chevron-learn-more">
-        </div>
-
-        <div class="solutions-grid-card-flex solutions-grid-card-flex-left">
-            <div>
-                <img src="../Images/barchart-alt.svg" alt="" class="barchart-img">
+            <div class="solutions-grid-card-flex">
+                <div>
+                    <img src="../Images/calendar-2.svg" alt="" class="calendar-img">
+                </div>
+                <h2 class="solutions-grid-card-titles">Project Calendars</h2>
+                <p class="solutions-grid-card-text">Automate client responses and keep track of any communication your team has with a client</p>
+                <button class="learn-more-button-white-bordered">Learn More</button>
+                    <!-- <img src="../Images/arrows-right.svg" class="right-chevron-learn-more"> -->
             </div>
-            <h2 class="solutions-grid-card-titles">User Analytics</h2>
-            <p class="solutions-grid-card-text">Automate client responses and keep track of any communication your team has with a client</p>
-            <button class="learn-more-button-white-bordered">Learn More </button>
-            <img src="../Images/arrows-right.svg" class="right-chevron-learn-more">
-        </div>
-
-        <div class="solutions-grid-card-flex solutions-grid-card-flex-right">
-            <div>
-                <img src="../Images/calendar-2.svg" alt="" class="calendar-img">
-            </div>
-            <h2 class="solutions-grid-card-titles">Project Calendars</h2>
-            <p class="solutions-grid-card-text">Automate client responses and keep track of any communication your team has with a client</p>
-            <button class="learn-more-button-white-bordered">Learn More</button>
-                <img src="../Images/arrows-right.svg" class="right-chevron-learn-more">
         </div>
 
     </section>
@@ -223,11 +225,16 @@
     <section class="footer">
         <h1>Try DoubleTap Today!</h1>
         <h3>Let's Get Started</h3>
-        <button class="get-started-btn">Get started
-        <span><i class="fa-solid fa-angles-right footer-btn-arrows" style="color: #ffffff;"></i></span></button> 
-        <button class="chat-btn">Chat with us
-            <span><i class="fa-regular fa-comment footer-btn-arrows" style="color: #0e6efd;"></i></span>
-        </button>
+
+        <div class="ending-button-flex">
+            <button class="get-started-btn">Get started
+                <span><i class="fa-solid fa-angles-right footer-btn-arrows" style="color: #ffffff;"></i></span>
+            </button>
+            <button class="chat-btn">Chat with us
+                <span><i class="fa-regular fa-comment footer-btn-arrows" style="color: #0e6efd;"></i></span>
+            </button>
+        </div>
+
         <div class="ending-info"> 
             <p>Free 14 day trial</p>
             <p class="ending-separator-dot">&#9679</p>

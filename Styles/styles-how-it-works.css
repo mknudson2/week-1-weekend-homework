@@ -43,6 +43,15 @@ width: 100%;
     color: #444444;
 }
 
+.navbar-flex a:hover {
+    color: var(--color-mainblue);
+}
+
+.navbar-flex a:active {
+    transform: scale(0.975);
+    color: #084eb7
+}
+
 .navbar-links-flex {
     display: flex;
     justify-content: space-between;

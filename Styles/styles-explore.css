@@ -43,6 +43,15 @@ width: 100%;
     color: #444444;
 }
 
+.navbar-flex a:hover {
+    color: var(--color-mainblue);
+}
+
+.navbar-flex a:active {
+    transform: scale(0.975);
+    color: #084eb7
+}
+
 .navbar-links-flex {
     display: flex;
     justify-content: space-between;
@@ -68,6 +77,17 @@ width: 100%;
     cursor: pointer;
 }
 
+.nav-btn-1:hover {
+    transform: scale(1.075);
+    transition: .135s ease-in;
+}
+
+.nav-btn-1:active {
+    transform: scale(1.025);
+    background: #0d6efd;
+    color: #ffffff;
+}
+
 .nav-btn-2 {
     border: none;
     background: var(--color-mainblue);
@@ -77,6 +97,18 @@ width: 100%;
     border-radius: 8px;
     cursor: pointer;
 }
+
+.nav-btn-2:hover {
+    transform: scale(1.075);
+    background: #0b60de ;
+    transition: .135s ease-in;
+}
+
+.nav-btn-2:active {
+    transform: scale(1.025);
+    background: #0d6efd
+}
+
 
 
 .main-grid {
@@ -131,6 +163,17 @@ width: 100%;
     text-decoration: none;
     cursor: pointer;
     /* position: relative; */
+}
+
+.sign-up-btn:hover {
+    transform: scale(1.075);
+    transition: .25s ease-in;
+}
+
+
+.chat-btn:hover {
+    transform: scale(1.075);
+    transition: .25s ease-in;
 }
 
 .main-grid-left-chat-btn {
@@ -247,11 +290,21 @@ div.main-grid-right-secondary-grid div {
     position: relative;
 }
 
+.secondary-grid-card-position1:hover {
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.5);
+    transition: .25s ease;
+}
+
 .secondary-grid-card-position2 {
     border-radius: 0 60px 0 60px;
     background: #ffffff;
     color: #000000;
     position: relative;
+}
+
+.secondary-grid-card-position2:hover {
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.5);
+    transition: .25s ease;
 }
 
 .secondary-grid-card-position3 {
@@ -262,6 +315,11 @@ div.main-grid-right-secondary-grid div {
 
 }
 
+.secondary-grid-card-position3:hover {
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.5);
+    transition: .25s ease;
+}
+
 .secondary-grid-card-position4 {
     border-radius: 60px 0 60px 0;
     background: var(--color-mainblue);
@@ -269,12 +327,21 @@ div.main-grid-right-secondary-grid div {
     position: relative;
 }
 
+.secondary-grid-card-position4:hover {
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.5);
+    transition: .25s ease;
+}
+
 .secondary-grid-card-position5 {
     border-radius: 50%;
     background: #ffffff;
     color: #000000;
     position: relative;
+}
 
+.secondary-grid-card-position5:hover {
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.5);
+    transition: .25s ease;
 }
 
 .secondary-grid-card-position6 {
@@ -284,11 +351,21 @@ div.main-grid-right-secondary-grid div {
     position: relative;
 }
 
+.secondary-grid-card-position6:hover {
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.5);
+    transition: .25s ease;
+}
+
 .secondary-grid-card-position7 {
     border-radius: 0 0 0 60px;
     background: var(--color-mainblue);
     color: #ffffff;
     position: relative;
+}
+
+.secondary-grid-card-position7:hover {
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.5);
+    transition: .25s ease;
 }
 
 .secondary-grid-card-position8 {
@@ -298,11 +375,21 @@ div.main-grid-right-secondary-grid div {
     position: relative;
 }
 
+.secondary-grid-card-position8:hover {
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.5);
+    transition: .25s ease;
+}
+
 .secondary-grid-card-position9 {
     border-radius: 0 0 60px 0;
     background: var(--color-mainblue);
     color: #ffffff;
     position: relative;
+}
+
+.secondary-grid-card-position9:hover {
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.5);
+    transition: .25s ease;
 }
 
 .secondary-grid-icons {
@@ -368,6 +455,7 @@ hr {
     margin: 54px 222px 82px 222px;
 }
 
+
 .explore-cards {
     border: none;
     border-radius: 8px;
@@ -375,6 +463,11 @@ hr {
     background: #ffffff;
     width: calc(150 / 16 * 1rem);
     height: calc(170 / 16 * 1rem);
+}
+
+.explore-cards:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
 }
 
 .explore-cards p {
@@ -472,6 +565,17 @@ div.payment-card-right li {
     margin-top: 1rem;
     margin-bottom: 30px;
     position: relative;
+}
+
+.learn-more-button-white:hover {
+    transform: scale(1.05);
+    transition: .25s ease-in;
+}
+
+.learn-more-button-white:active {
+    transform: scale(1);
+    background: #eeeeee;
+    transition: .1s
 }
 
 .white-button-img {
@@ -591,6 +695,18 @@ div.payment-card-right li {
     /* position: relative; */
 }
 
+.learn-more-button-white-bordered:hover {
+    transform: scale(1.05);
+    background: var(--color-mainblue);
+    color: #ffffff;
+    transition: .25s ease-in;
+}
+
+.learn-more-button-white-bordered:active {
+    transform: scale(1);
+    background: #0d6dfdaf;
+}
+
 .button-relative {
     position: relative;
 }
@@ -662,6 +778,26 @@ div.payment-card-right li {
     cursor: pointer;
 }
 
+.chat-btn:hover {
+    transform: scale(1.05);
+    background: #eeeeee;
+}
+
+.get-started-btn:hover {
+    transform: scale(1.05);
+    background: #0acf2b;
+    transition: .25s ease-in;
+}
+
+.chat-btn:active {
+    transform: scale(1);
+    background: #ffffff;
+}
+
+.get-started-btn:active {
+    transform: scale(1);
+    background: #08b425;
+}
 
 
 .footer-btn-arrows {

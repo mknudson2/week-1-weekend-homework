@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../Styles/styles-signup.css">
 </head>
 
@@ -24,25 +25,44 @@
                 <div class="form-position">
                     <img src="../Images/email.svg" class="sign-in-input-icons">
                     <input class="sign-in-input" 
-                           type="text" 
+                           type="email" 
                            placeholder="email">
                 </div>
 
                 <div class="form-position">
                     <img src="../Images/password.svg" class="sign-in-input-icons">
-                    <input type="text"
+                    <input type="password"
                            class="sign-in-input"
                            placeholder="password">
                 </div>
             </form>
             
-            <button class="main-sign-up-button">Sign in</button>
+            <button class="main-sign-up-button" data-bs-toggle="modal" data-bs-target="#signup-modal">Sign up</button>
+
+            <div class="modal fade" id="signup-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Congratulations!</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      You've signed up for DoubleTap! Come on in and explore!
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary simple-button-active-scale" data-bs-dismiss="modal">Close</button>
+                      <a href="../Start Exploring/index.html"><button type="button" class="btn btn-primary simple-button-active-scale">Continue to DoubleTap</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             <p class="social-media-text">Or sign in with social media</p>
             <div class="main-image-flex">
-                <img src="../Images/facebook.svg" alt="Facebook" class="social-media-images">
-                <img src="../Images/twitter.svg" alt="Twitter" class="social-media-images">
-                <img src="../Images/google.svg" alt="Google" class="social-media-images">
-                <img src="../Images/linkedin.svg" alt="LinkedIn" class="social-media-images">
+                <a href="https://www.facebook.com"><img src="../Images/facebook.svg" alt="Facebook" class="social-media-images"></a>
+                <a href="https://www.twitter.com"><img src="../Images/twitter.svg" alt="Twitter" class="social-media-images"></a>
+                <a href="https://www.google.com"><img src="../Images/google.svg" alt="Google" class="social-media-images"></a>
+                <a href="https://www/linkedin.com"><img src="../Images/linkedin.svg" alt="LinkedIn" class="social-media-images"></a>
             </div>
         </div>
     </main>
@@ -51,6 +71,6 @@
     <section class="img-grid">
         <img src="../Images/sign-up-graphic.png" class="img-position"/>
     </section>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

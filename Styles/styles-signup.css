@@ -19,7 +19,6 @@ html {
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     margin-left: calc(128 / 16 * 1rem);
-    gird-
 }
 
 .main-grid-column {
@@ -76,6 +75,21 @@ html {
     font-size: 20px;
 }
 
+.main-sign-up-button:hover {
+    transform: scale(1.03);
+    background: #0b60de ;
+    transition: .135s ease-in;
+}
+
+.main-sign-up-button:active {
+    transform: scale(.97);
+    background: #0d6efd
+}
+
+.simple-button-active-scale:active {
+    transform: scale(.975);
+}
+
 .social-media-text {
     font-family: sans-serif;
     margin-top: 2rem;
@@ -98,6 +112,12 @@ html {
     border-radius: 50%;
 }
 
+.social-media-images:hover {
+    transform: scale(1.25);
+    background: var(--color-mainblue);
+    border: 1px solid var(--color-outlinegrey);
+    transition: .25s ease;
+}
 
 .img-grid {
     grid-column: 2 / span 2;

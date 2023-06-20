@@ -343,21 +343,63 @@ hr {
 
 }
 
-.description-header {
-    text-align: center;
+.explore-text h2 {
+    font-size: calc(32 / 16 * 1rem);
+    line-height: calc(37.2 / 16 * 1rem);
     font-weight: 500;
-    font-size: calc(28 / 16 * 1rem);
     margin-top: calc(96 / 16 * 1rem);
-    margin-bottom: 2rem;
+    text-align: center;
 }
 
-.description-text {
-    text-align: center;
+.explore-text p {
     font-size: 1rem;
-    font-weight: 400;
-    margin-left: calc(372 / 16 * 1rem);
-    margin-right: calc(348 / 16 * 1rem);
-    margin-bottom: 2rem; 
+    line-height: calc(18.75 / 16 * 1rem);
+    font-weight: 500;
+    margin-top: calc(24 / 16 * 1rem);
+    text-align: center;
+    margin-left: 353px;
+    margin-right: 353px;
+}
+
+.explore-cards-flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 54px 222px 82px 222px;
+}
+
+.explore-cards {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    background: #ffffff;
+    width: calc(150 / 16 * 1rem);
+    height: calc(170 / 16 * 1rem);
+}
+
+.explore-cards p {
+    text-align: center;
+    padding-top: 7.5rem;
+    position: relative;
+    font-weight: 500;
+    color: #444444;
+}
+
+.explore-cards img {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+.bitcoin {
+    transform: translateX(25%)
+}
+
+.retention {
+    transform: translateX(-5%)
 }
 
 .lg-payment-card {
@@ -374,29 +416,11 @@ hr {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    
 }
-
-
-/* TOP CARD */
-
 
 .lg-payment-card-grid-left {
     grid-column: 1;
     background: #ffffff;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
-    border-radius: 8px 0px 0px 8px;
-}
-
-#card1-img {
-    margin: 70px;
-}
-
-.lg-payment-card-grid-right {
-    grid-column: 3;
-    background: #ffffff;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
-    border-radius: 8px 0px 0px 8px;
 }
 
 .payment-card-right {
@@ -404,62 +428,10 @@ hr {
     background: var(--color-mainblue);
     border-radius: 0 16px 16px 0;
     padding-left: 2rem;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 8px (rgba(0, 0, 0, 0.25));
 }
-
-/* BOTTOM CARD */
-
-.lg-payment-card2 {
-    width: 880px;
-    height: 420px;
-    border: none;
-    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.25);
-    border-radius: 16px;
-    transform: translateX(18%);
-    margin-bottom: 96px;
-}
-
-.lg-payment-card-grid2 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    
-}
-
-.lg-payment-card-grid-left2 {
-    grid-column: 3;
-    background: #ffffff;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
-    border-radius: 0px 16px 16px 0px;
-}
-
-.payment-card-right2 {
-    grid-column-start: 1;
-    grid-column-end: 3; 
-    grid-row: 1;
-    background: var(--color-mainblue);
-    border-radius: 16px 0 0 16px;
-    padding-left: 2rem;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
-    color: #ffffff;
-    padding-top: 48px;
-}
-
-
-
 
 div.payment-card-right h3 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: calc(28.13 / 16 * 1rem);
-    color:#ffffff;
-    text-align: left;
-    margin-top: calc(48 / 16 *1rem);
-    margin-bottom: 1.5rem;
-    letter-spacing: 2px;
-}
-
-div.payment-card-right2 h3 {
     font-size: 1.5rem;
     font-weight: 500;
     line-height: calc(28.13 / 16 * 1rem);
@@ -479,15 +451,6 @@ div.payment-card-right p {
     margin-bottom: 1.5rem;
 }
 
-div.payment-card-right2 p {
-    font-size: 1rem;
-    font-weight: 500; 
-    color: #ffffff;
-    line-height: calc(18.75 / 16 * 1rem);
-    text-align: left;
-    margin-bottom: 1.5rem;
-}
-
 div.payment-card-right li {
     color: #ffffff;
     font-size: calc(12 / 16 * 1rem);
@@ -496,20 +459,6 @@ div.payment-card-right li {
     margin-left: 1rem;
     margin-right: calc(119 / 16 * 1rem);
     margin-bottom: 1rem;
-}
-
-div.payment-card-right2 li {
-    color: #ffffff;
-    font-size: calc(12 / 16 * 1rem);
-    font-weight: 500;
-    line-height: 14px;
-    margin-left: 1rem;
-    margin-right: calc(119 / 16 * 1rem);
-    margin-bottom: 1rem;
-}
-
-#card2-img {
-    margin-top: 39px;
 }
 
 .learn-more-button-white {
@@ -531,6 +480,103 @@ div.payment-card-right2 li {
     left: 34rem;
 }
 
+
+/* SOLUTIONS */
+
+.solutions-header {
+    font-size: calc(28 / 16 * 1rem);
+    font-weight: 550;
+    line-height: 2rem;
+    color: #000000;
+    text-align: center;
+    letter-spacing: .09rem;
+
+}
+
+/* .solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    
+} */
+
+.solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;   
+}
+
+.solutions-flexrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.solutions-grid-card-flex {
+    /* border: 2px solid red; */
+    /* max-width: max-content; */
+    width: 250px;
+    text-align: center;
+    margin-top: 58px;
+    margin-left: 3.6rem;
+}
+
+.solutions-grid-card-flex div {
+    border: none;
+    background: var(--color-mainblue);
+    width: 128px;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    transform: translateX(50%);
+    margin-bottom: 23px;
+}
+
+.email-img {
+    position: absolute;
+    top: 2.6rem;
+    left: 2.2rem;
+    width: 60px; 
+}
+
+.barchart-img {
+    position: absolute;
+    top: 1.9rem;
+    left: 2.2rem;
+    width: 60px; 
+}
+
+.calendar-img {
+    position: absolute;
+    top: 1.8rem;
+    left: 2.2rem;
+    width: 60px; 
+}
+
+.solutions-grid-card-titles {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 32.81px;
+}
+
+.solutions-grid-card-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    margin-top: 13px;
+    text-align: center;
+}
+/* 
+.solutions-grid-card-flex-left {
+    transform: translateX(12.5%);
+}
+
+.solutions-grid-card-flex-right {
+    transform: translateX(-35%);
+} */
 
 .learn-more-button-white-bordered {
     background: #ffffff;
@@ -560,7 +606,6 @@ div.payment-card-right2 li {
     border: none;
     background: var(--color-mainblue);
     text-align: center;
-    width: 100%;
 }
 
 .footer h1 {
